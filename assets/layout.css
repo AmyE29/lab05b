@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+  }
+  @media only screen and (min-width: 960px) {
+  body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: /* a */ 100fr /* b */ 150fr /* c */ 125fr /* d */ 125fr /* e, f */ 250fr /* g, h */ 250fr /* i */ 100fr;
+    height: 767px;
+    margin: 0 auto;
+    width: 480px;
+    text-align: center;
+  }
+  
+  /* a */
+  header{
+    grid-column: 1/4;
+    grid-row: 1/1;
+    background-color: #f0aae2;;
+    text-align: center;
+    border: 1px solid black;
+  }
+  
+  /* b */
+  main {
+    grid-column: 1 / 3;
+    grid-row: 2 / 2;
+    background-color: #f0aae2;;
+    text-align: center;
+    border: 1px solid black;
+    border-top: 0px;
+    border-bottom: 0px;
+  }
+  
+  /* c */
+  div:first-of-type {
+    grid-column: 1 / 3;
+    grid-row: 3 / 3;
+    background-color: #f0aae2;;
+    text-align: center;
+    border: 1px solid black;
+    border-bottom: 0px;
+  }
+  
+  /* d */
+  div:nth-of-type(2) {
+    grid-column: 1 / 3;
+    grid-row: 4 / 4;
+    background-color: #f0aae2;;
+    text-align: center;
+    border: 1px solid black;
+    border-bottom: 0px;
+  }
+  
+  /* e */
+  div:nth-of-type(3) {
+    grid-column: 1 / 2;
+    grid-row: 5 / 5;
+    background-color: #f0aae2;;
+    text-align: center;
+    border: 1px solid black;
+    border-bottom: 0px;
+  }
+  
+  /* f */
+  div:nth-of-type(4) {
+    grid-column: 2 / 3;
+    grid-row: 5 / 5;
+    background-color: #f0aae2;;
+    text-align: center;
+    border: 1px solid black;
+    border-left: 0px;
+    border-bottom: 0px;
+  }
+  
+  /* g */
+  div:nth-of-type(5) {
+    grid-column: 1 / 2;
+    grid-row: 6 / 6;
+    background-color: #f0aae2;;
+    text-align: center;
+    border: 1px solid black;
+    border-bottom: 0px;
+  }
+  
+  /* h */
+  div:nth-of-type(6) {
+    grid-column: 2 / 3;
+    grid-row: 6 / 6;
+    background-color: #f0aae2;;
+    text-align: center;
+    border: 1px solid black;
+    border-bottom: 0px;
+    border-left: 0px;
+  }
+  
+  /* i */
+  footer {
+    grid-column: 1 / span 2;
+    grid-row: 7 / 7;
+    background-color: #f0aae2;
+    text-align: center;
+    border: 1px solid black;
+    border-bottom: 0px;
+  }
+  
+  /* Tablet View */
+  @media only screen and (min-width: 768px) {
+    body {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: /* a */ 100fr /* b */ 150fr /* c, d */ 125fr /* e, f, g, h */ 250fr /* i */ 80fr;
+      height: 767px;
+      margin: 0 auto;
+      width: 768px;
+    }
+    
+    /* a */
+    header{
+      grid-column: 1 / span 4;
+      grid-row: 1 / 1;
+      background-color:  rgb(74, 213, 223);
+      text-align: center;
+      border: 1px solid black;
+    }
+    
+    /* b */
+    main {
+      grid-column: 1 / span 4;
+      grid-row: 2 / 2;
+      background-color:  rgb(74, 213, 223);
+      text-align: center;
+      border: 1px solid black;
+      border-top: 0px;
+      border-bottom: 0px;
+    }
+    
+    /* c */
+    div:nth-of-type(1) {
+      grid-column: 1 / span 2;
+      grid-row: 3 / 3;
+      background-color:  rgb(74, 213, 223);
+      text-align: center;
+      border: 1px solid black;
+      border-bottom: 0px;
+    }
+    
+    /* d */
+    div:nth-of-type(2) {
+      grid-column: 3 / span 2;
+      grid-row: 3 / 3;
+      background-color:  rgb(74, 213, 223);
+      text-align: center;
+      border: 1px solid black;
+      border-bottom: 0px;
+      border-left: 0px;
+    }
+    
+    /* e */
+    div:nth-of-type(3) {
+      grid-column: 1 / 2;
+      grid-row: 4 / 4;
+      background-color: rgb(74, 213, 223);
+      text-align: center;
+      border: 1px solid black;
+      border-bottom: 0px;
+    }
+    
+    /* f */
+    div:nth-of-type(4) {
+      grid-column: 2 / 3;
+      grid-row: 4 / 4;
+      background-color: rgb(74, 213, 223);
+      text-align: center;
+      border: 1px solid black;
+      border-left: 0px;
+      border-bottom: 0px;
+    }
+    
+    /* g */
+    div:nth-of-type(5) {
+      grid-column: 3 / 4;
+      grid-row: 4 / 4;
+      background-color: rgb(74, 213, 223);
+      text-align: center;
+      border: 1px solid black;
+      border-bottom: 0px;
+      border-left: 0px;
+    }
+    
+    /* h */
+    div:nth-of-type(6) {
+      grid-column: 4 / 5;
+      grid-row: 4 / 4;
+      background-color: rgb(74, 213, 223);
+      text-align: center;
+      border: 1px solid black;
+      border-bottom: 0px;
+      border-left: 0px;
+    }
+    
+    /* i */
+    footer {
+      grid-column: 1 / span 4;
+      grid-row: 5 / 5;
+      background-color: rgb(74, 213, 223);
+      text-align: center;
+      border: 1px solid black;
+      border-bottom: 0px;
+    }
+  }
+}
+  /* Desktop View */
+  @media only screen and (min-width: 960px) {
+    body {
+      display: grid;
+      grid-template-columns: 200fr 190fr 190fr 190fr 190fr;
+      grid-template-rows: /* a */ 100fr /* c, d */ 200fr /* e, f, g, h */ 250fr /* i */ 150fr;
+      margin: 0 auto;
+      width: 960px;
+      height: 768px;
+    }
+  
+    /* a */
+   header {
+      grid-column: 1 / span 5;
+      background-color: rgb(138, 85, 223);
+      text-align: center;
+      border: 1px solid black;
+    }
+  
+    /* b */
+    main {
+      grid-column: 1 / 2;
+      grid-row: 2 / span 3;
+      background-color: rgb(138, 85, 223);
+      text-align: center;
+      display: inline-block;
+      border: 1px solid black;
+      border-top: 0px;
+      border-right: 0px;
+    }
+  
+    /* c */
+    div:nth-of-type(1) {
+      background-color: rgb(138, 85, 223);
+      grid-column: 2 / 4;
+      grid-row: 2 / 2;
+      text-align: center;
+      border: 1px solid black;
+      border-top: 0px;
+    }
+  
+    /* d */
+    div:nth-of-type(2) {
+      background-color: rgb(138, 85, 223);
+      grid-column: 4 / 6;
+      grid-row: 2 / 2;
+      text-align: center;
+      border: 1px solid black;
+      border-top: 0px;
+      border-left: 0px;
+    }
+  
+    /* e */
+    div:nth-of-type(3) {
+      background-color: rgb(138, 85, 223);
+      grid-column: 2 / 3;
+      grid-row: 3 / 3;
+      text-align: center;
+      border: 1px solid black;
+      border-top: 0px;
+    }
+  
+    /* f */
+    div:nth-of-type(4) {
+      background-color: rgb(138, 85, 223);
+      grid-column: 3 / 4;
+      grid-row: 3 / 3;
+      text-align: center;
+      border: 1px solid black;
+      border-left: 0px;
+      border-top: 0px;
+    }
+  
+    /* g */
+    div:nth-of-type(5) {
+      background-color: rgb(138, 85, 223);
+      grid-column: 4 / 5;
+      grid-row: 3 / 3;
+      text-align: center;
+      border: 1px solid black;
+      border-left: 0px;
+      border-top: 0px;
+    }
+  
+    /* h */
+    div:nth-of-type(6) {
+      background-color: rgb(138, 85, 223);
+      grid-column: 5 / 6;
+      grid-row: 3 / 3;
+      text-align: center;
+      border: 1px solid black;
+      border-left: 0px;
+      border-top: 0px;
+    }
+  
+    /* i */
+    footer {
+      background-color: rgb(138, 85, 223);
+      grid-column: 2 / span 4;
+      grid-row: 4 / 4;
+      text-align: center;
+      border: 1px solid black;
+      border-top: 0px;
+    }
+  
+  }
